@@ -34,7 +34,7 @@
       </div>
 
       <div class="times">
-        <div class="times-button">
+        <div class="times-button" @click="subtractTime()">
           <img class="img" src="/img/minus.svg" alt="" />
         </div>
 
@@ -46,9 +46,9 @@
       </div>
     </div>
 
-    <button class="play-button" @click="playVideo">
+    <!-- <button class="play-button" @click="playVideo">
       <img src="/img/play.svg" alt="" />
-    </button>
+    </button> -->
   </div>
 </template>
 
@@ -197,6 +197,11 @@ export default {
         this.times = this.times - 1;
       }
     },
+    subtractTime() {
+      if (this.times > 0) {
+      this.times = this.times - 2;
+      }
+    },
   },
 };
 </script>
@@ -240,7 +245,7 @@ iframe {
   outline: none;
   font-weight: 600;
   border-radius: 0px 4px 4px 0px;
-
+  cursor: pointer;
   background-color: #bd42ab;
 }
 .logo {
