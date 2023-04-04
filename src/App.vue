@@ -58,14 +58,14 @@
 export default {
   data() {
     return {
-      videoId: "d1YBv2mWll0",
+      videoId: "BJhF0L7pfo8",
       times: 5,
       time: 0,
       videoLength: 0,
       videoTitle: null,
       search: null,
       playerVars: {
-        playlist: "d1YBv2mWll0",
+        playlist: "BJhF0L7pfo8",
         autoplay: 0,
         loop: 0,
       },
